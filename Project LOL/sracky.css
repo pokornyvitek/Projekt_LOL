@@ -68,7 +68,7 @@ body {
     border: 7px solid rgba(251, 251, 251, 0.82);
 }
 .navbar li a {
-    display: flex;/*necotamnapis*/
+    display: flex;
 
     align-items: center;
     justify-content: center;
@@ -80,3 +80,27 @@ body {
 .navbar li a:hover {
     color: white;
 }
+.sekceobrazku {
+    margin: 20px 5px 0 5px;
+}
+
+.sekcejedna, .sekcedva, .sekcetri {
+    display: flex;
+    justify-content: center;
+}
+
+.sekcejedna .text { margin-left: 50px; }
+.sekcedva .text { margin-right: 50px; }
+.sekcetri .text { margin-left: 50px; }
+
+.obrazek {
+    width: 300px;
+}
+
+.text {
+    max-width: 400px;
+    color: white;
+}
+
+.text p { font-size: 20px; }
+.text h1 { font-size: 55px; }
