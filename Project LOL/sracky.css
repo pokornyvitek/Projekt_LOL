@@ -104,3 +104,25 @@ body {
 
 .text p { font-size: 20px; }
 .text h1 { font-size: 55px; }
+
+main .moje-tabulka {
+    margin: 60px auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    color: white;
+}
+main .moje-tabulka thead th {
+    font-size: 20px;
+}
+main .moje-tabulka th, main .moje-tabulka td {
+    border: 1px solid white;
+    padding: 20px;
+}
+main .moje-tabulka th img {
+    width: 100px;
+    height: 100px;
+}
+main .moje-tabulka td img {
+    width: 150px;
+    height: 150px;
+}
