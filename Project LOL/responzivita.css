@@ -1,0 +1,77 @@
+/* Tabletová a mobilní verze (pod 1000px) */
+@media screen and (max-width: 1000px) {
+    .navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap; /* Položky menu se zalomí pod sebe */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .navbar li {
+        width: 140px; /* Zmenšení tlačítek v menu */
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .sekcejedna, .sekcedva, .sekcetri {
+        flex-direction: column; /* Obrázek a text budou pod sebou */
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .sekcejedna .text, .sekcedva .text, .sekcetri .text {
+        margin: 20px 0 0 0; /* Zrušení bočních marginů */
+        max-width: 90%;
+    }
+
+    .nadpis-special {
+        font-size: 40px;
+        margin: 120px auto 40px auto; /* Více místa pod fixním navbarem */
+    }
+}
+
+/* Mobilní verze (pod 600px) */
+@media screen and (max-width: 600px) {
+    .navbar li {
+        width: 120px;
+        font-size: 14px;
+        border-width: 4px;
+    }
+
+    .text h1 {
+        font-size: 35px;
+    }
+
+    .obrazek {
+        width: 80%; /* Obrázek se přizpůsobí šířce mobilu */
+        height: auto;
+    }
+
+    /* Tabulka musí být scrollovatelná, aby nerozbila layout */
+    main .moje-tabulka {
+        display: block;
+        overflow-x: auto;
+        width: 95%;
+    }
+
+    .formular input, .formular textarea, .formular select {
+        width: 90%; /* Formulář skoro přes celou šířku */
+    }
+
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+        color: white;
+    }
+}
+
+/* Animace "mravenci" (aby fungovala ta tvoje hover podmínka) */
+@keyframes mravenci {
+    from { background-position: 0 0, 0 0; }
+    to { background-position: 0 0, 16px 0; }
+}

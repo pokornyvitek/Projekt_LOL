@@ -14,7 +14,7 @@ body {
     font-size: 60px;
     color: #fff;
     text-align: center;
-    margin: 80px auto 85px auto;
+    margin: 150px auto 85px auto;
 }
 .uvodninadpis{
     margin: 120px auto 0 auto;
@@ -220,3 +220,38 @@ footer .logotokyo img {
     transition: 0.5s ease-in-out;
 }
 .kontakty-foot div form .radio-group label input[type="radio"] {color: white}
+.radio-group label {
+    color: white;
+    margin: 5px 10px;
+    font-size: 18px;
+}
+.checkbox-label {color: white}
+.sekcejedna, .sekcedva, .sekcetri {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vycentruje text a obrázek vertikálně */
+    gap: 40px;           /* Vytvoří bezpečnou mezeru mezi textem a fotkou */
+    margin: 40px auto;
+    max-width: 1000px;   /* Aby sekce nebyla roztažená přes celou obrazovku */
+    padding: 20px;
+}
+
+/* Nastavení pro obrázek, aby neutíkal */
+.obrazek {
+    flex: 1;            /* Zabere 50 % šířky */
+    max-width: 450px;   /* Maximální velikost obrázku */
+}
+
+.obrazek img {
+    width: 100%;        /* Vyplní svůj kontejner (těch 450px) */
+    height: auto;
+    border: 3px solid #c8aa6e; /* Zlatý rámeček pro styl LoL */
+    border-radius: 10px;
+    display: block;
+}
+
+/* Nastavení pro text */
+.text {
+    flex: 1;            /* Zabere zbylých 50 % šířky */
+    max-width: 500px;
+}
