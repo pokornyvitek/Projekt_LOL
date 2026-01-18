@@ -229,29 +229,49 @@ footer .logotokyo img {
 .sekcejedna, .sekcedva, .sekcetri {
     display: flex;
     justify-content: center;
-    align-items: center; /* Vycentruje text a obrázek vertikálně */
-    gap: 40px;           /* Vytvoří bezpečnou mezeru mezi textem a fotkou */
+    align-items: center;
+    gap: 40px;
     margin: 40px auto;
-    max-width: 1000px;   /* Aby sekce nebyla roztažená přes celou obrazovku */
+    max-width: 1000px;   /
     padding: 20px;
 }
 
-/* Nastavení pro obrázek, aby neutíkal */
+
 .obrazek {
-    flex: 1;            /* Zabere 50 % šířky */
-    max-width: 450px;   /* Maximální velikost obrázku */
+    flex: 1;
+    max-width: 450px;
 }
 
 .obrazek img {
-    width: 100%;        /* Vyplní svůj kontejner (těch 450px) */
+    width: 100%;
     height: auto;
-    border: 3px solid #c8aa6e; /* Zlatý rámeček pro styl LoL */
+    border: 3px solid #c8aa6e;
     border-radius: 10px;
     display: block;
 }
 
-/* Nastavení pro text */
+
 .text {
-    flex: 1;            /* Zabere zbylých 50 % šířky */
+    flex: 1;
     max-width: 500px;
+}
+.foto-galerie {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 400px));
+
+
+    justify-content: center;
+    justify-items: center;
+
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.galerie-polozka {
+    width: 100%;
+    max-width: 400px;
 }
